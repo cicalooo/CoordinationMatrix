@@ -1,0 +1,10 @@
+CoordinationMatrix
+Copyright 2026 the CoordinationMatrix authors. Licensed under the Apache License 2.0 (see LICENSE).
+
+This product includes software from facebookresearch/sam2 (SAM 2 / SAM 2.1),
+Copyright (c) Meta Platforms, Inc. and affiliates, licensed under the Apache License 2.0.
+Vendored at cm/vendor/sam2 (upstream commit in cm/vendor/sam2/UPSTREAM_COMMIT). Modifications:
+  - absolute `sam2.` imports rewritten as relative imports; hydra/iopath replaced by a small YAML loader
+  - utils/amg.py removed; utils/transforms.py uses torch instead of torchvision
+  - sam2_video_predictor.py: memory-feature dtype configurable (was hard-coded bfloat16)
+Model weights (Kijai/sam2-safetensors on Hugging Face) are downloaded at runtime and are not distributed here.

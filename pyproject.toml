@@ -1,0 +1,11 @@
+[project]
+name = "coordinationmatrix"
+description = "SAM 2.1 point/box video segmentation for ComfyUI (V3 nodes)"
+version = "0.2.0"
+requires-python = ">=3.10"
+dependencies = ["av", "Pillow", "scipy", "pyyaml", "tqdm", "huggingface_hub", "numpy"]
+
+[tool.comfy]
+PublisherId = "coordinationmatrix"
+DisplayName = "CoordinationMatrix"
+Icon = ""
